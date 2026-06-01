@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b4w0ff308rukn"]
+
+[ext_resource type="Script" uid="uid://cqyqx0ocl7s2v" path="res://notify.gd" id="1_uqql6"]
+[ext_resource type="AudioStream" uid="uid://cxi0hbvmvhgxn" path="res://sounds/enemyexplode.wav" id="2_oeqc6"]
+
+[node name="notify" type="Label" unique_id=990228217]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uqql6")
+
+[node name="notify" type="AudioStreamPlayer2D" parent="." unique_id=115473196]
+stream = ExtResource("2_oeqc6")

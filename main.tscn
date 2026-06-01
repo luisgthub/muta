@@ -1,0 +1,43 @@
+[gd_scene format=4 uid="uid://b63euj86pl2ae"]
+
+[ext_resource type="PackedScene" uid="uid://71tk54eadp2i" path="res://map/tile_block.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://ciwxsuh6weu1" path="res://main.gd" id="1_lquwl"]
+[ext_resource type="PackedScene" uid="uid://c14yrr3p6lvp0" path="res://virus.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://de0jvd3ouqp5m" path="res://victims/victim_two.tscn" id="3_272bh"]
+[ext_resource type="Texture2D" uid="uid://dst5auk51vx8" path="res://assets/background.png" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://xs34vf8ca77p" path="res://victims/victim_one.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://drw8c65485opt" path="res://victims/victim_three.tscn" id="4_5vw27"]
+[ext_resource type="PackedScene" uid="uid://bj34bllysajyl" path="res://bomb.tscn" id="5_5vw27"]
+
+[node name="main" type="Node2D" unique_id=198829621]
+position = Vector2(-40, 69)
+script = ExtResource("1_lquwl")
+scene1 = ExtResource("4_1bvp3")
+scene2 = ExtResource("3_272bh")
+scene3 = ExtResource("4_5vw27")
+scene4 = ExtResource("5_5vw27")
+
+[node name="tile_block" parent="." unique_id=1212648753 instance=ExtResource("1_ig7tw")]
+tile_map_data = PackedByteArray("AAALAPL/AAAAAAAAAAD5//L/AAAAAAAAAAD5/wUAAAAAAAAAAAD6/wUAAAAAAAAAAAD7/wUAAAAAAAAAAAD8/wUAAAAAAAAAAAD9/wUAAAAAAAAAAAD+/wUAAAAAAAAAAAD//wUAAAAAAAAAAAAAAAUAAAAAAAAAAAABAAUAAAAAAAAAAAACAAUAAAAAAAAAAAADAAUAAAAAAAAAAAAEAAUAAAAAAAAAAAAFAAUAAAAAAAAAAAAGAAUAAAAAAAAAAAAHAAUAAAAAAAAAAAAIAAUAAAAAAAAAAAAJAAUAAAAAAAAAAAAKAAUAAAAAAAAAAAALAAUAAAAAAAAAAAD6//L/AAAAAAAAAAD7//L/AAAAAAAAAAD8//L/AAAAAAAAAAD9//L/AAAAAAAAAAD+//L/AAAAAAAAAAD///L/AAAAAAAAAAAAAPL/AAAAAAAAAAABAPL/AAAAAAAAAAACAPL/AAAAAAAAAAADAPL/AAAAAAAAAAAEAPL/AAAAAAAAAAAFAPL/AAAAAAAAAAAGAPL/AAAAAAAAAAAHAPL/AAAAAAAAAAAJAPL/AAAAAAAAAAAIAPL/AAAAAAAAAAAKAPL/AAAAAAAAAADx//L/AAAAAAAAAADx//P/AAAAAAAAAADx//T/AAAAAAAAAADx//X/AAAAAAAAAADx//b/AAAAAAAAAADx//f/AAAAAAAAAADx//j/AAAAAAAAAADx//n/AAAAAAAAAADx//r/AAAAAAAAAADx//v/AAAAAAAAAADx//z/AAAAAAAAAADx//3/AAAAAAAAAADx//7/AAAAAAAAAADx////AAAAAAAAAADx/wAAAAAAAAAAAADx/wEAAAAAAAAAAADx/wIAAAAAAAAAAADx/wMAAAAAAAAAAADx/wQAAAAAAAAAAADx/wUAAAAAAAAAAADy/wUAAAAAAAAAAADz/wUAAAAAAAAAAAD0/wUAAAAAAAAAAAD1/wUAAAAAAAAAAAD2/wUAAAAAAAAAAAD3/wUAAAAAAAAAAAD4/wUAAAAAAAAAAADy//L/AAAAAAAAAADz//L/AAAAAAAAAAD0//L/AAAAAAAAAAD1//L/AAAAAAAAAAD2//L/AAAAAAAAAAD3//L/AAAAAAAAAAD4//L/AAAAAAAAAAATAAUAAAAAAAAAAAATAAQAAAAAAAAAAAATAAMAAAAAAAAAAAATAAIAAAAAAAAAAAATAAEAAAAAAAAAAAATAAAAAAAAAAAAAAATAP//AAAAAAAAAAATAP7/AAAAAAAAAAATAP3/AAAAAAAAAAATAPz/AAAAAAAAAAATAPv/AAAAAAAAAAATAPr/AAAAAAAAAAATAPn/AAAAAAAAAAATAPj/AAAAAAAAAAATAPf/AAAAAAAAAAATAPb/AAAAAAAAAAATAPX/AAAAAAAAAAATAPT/AAAAAAAAAAATAPP/AAAAAAAAAAATAPL/AAAAAAAAAAASAPL/AAAAAAAAAAARAPL/AAAAAAAAAAAQAPL/AAAAAAAAAAAPAPL/AAAAAAAAAAAOAPL/AAAAAAAAAAANAPL/AAAAAAAAAAAMAPL/AAAAAAAAAAASAAUAAAAAAAAAAAARAAUAAAAAAAAAAAAQAAUAAAAAAAAAAAAPAAUAAAAAAAAAAAAOAAUAAAAAAAAAAAANAAUAAAAAAAAAAAAMAAUAAAAAAAAAAAA=")
+
+[node name="virus" parent="." unique_id=2128201172 instance=ExtResource("2_0xm2m")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1267258387]
+position = Vector2(40, -69)
+offset = Vector2(0, 5)
+zoom = Vector2(2, 2)
+
+[node name="background" type="Parallax2D" parent="." unique_id=304650647]
+z_index = -2
+
+[node name="Sprite2D" type="Sprite2D" parent="background" unique_id=741044348]
+z_index = -1
+position = Vector2(39.5, -63.99998)
+scale = Vector2(2.1914063, 1.2578126)
+texture = ExtResource("3_h2yge")
+
+[node name="Label" type="Label" parent="." unique_id=263326831]
+offset_left = -18.0
+offset_top = -202.0
+offset_right = 22.0
+offset_bottom = -179.0

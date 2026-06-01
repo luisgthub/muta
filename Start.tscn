@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bngmvyfcit10c"]
+
+[ext_resource type="Script" uid="uid://ctfctpuo2gphd" path="res://start.gd" id="1_r305v"]
+
+[node name="CenterContainer" type="CenterContainer" unique_id=306718783]
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_r305v")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=34383168]
+layout_mode = 2
+
+[node name="start" type="Button" parent="VBoxContainer" unique_id=2111700990]
+layout_mode = 2
+text = "START GAME"
+
+[node name="quit" type="Button" parent="VBoxContainer" unique_id=1629614769]
+layout_mode = 2
+text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]

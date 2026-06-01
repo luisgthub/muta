@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d3mq2inwuwxvl"]
+
+[ext_resource type="Script" uid="uid://ddsrqunwwv3ce" path="res://dificulty.gd" id="1_bo8o2"]
+
+[node name="dif" type="Label" unique_id=990228217]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1087.0
+offset_bottom = -599.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+text = "MORE DIFICULTY !
+"
+script = ExtResource("1_bo8o2")
